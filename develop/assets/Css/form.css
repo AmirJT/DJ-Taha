@@ -1,0 +1,97 @@
+body {
+    background-color: #111;
+    background-image: url(../images/Hakkasan.RadioJavan.SammyDean.12.22.23-3.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: #d8b0ff;
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.page-section {
+    background: rgba(30, 30, 30, 0.9); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+    width: 700px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+h2 {
+    color: #ff6f61;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 0.9em;
+    color: #d8b0ff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #d8b0ff;
+    font-size: 0.9em;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.submit-button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.submit-button:hover {
+    background: #d65f4f;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+        align-items: flex-start;
+    }
+    
+    .page-section {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+
+    input, textarea {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .submit-button {
+        font-size: 0.8em;
+        padding: 6px 15px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - My Work</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css"> 
+    
+</head>
+<body>
+    <main>
+        <section class="page-section" id="Book-Now">
+            <h2>Book Your Event</h2>
+            <form id="booking-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="location">Event Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="event-type">Type of Event:</label>
+                <input type="text" id="event-type" name="event-type" required>
+
+                <label for="guest-count">Number of Guests:</label>
+                <input type="number" id="guest-count" name="guest-count" required>
+
+                <label for="referral">How Did You Hear About Us?</label>
+                <input type="text" id="referral" name="referral" required>
+
+                <label for="event-details">Tell Us More About This Event:</label>
+                <textarea id="event-details" name="event-details" rows="4" required></textarea>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="assets/Java/main.js"></script>
+</body>
+</html>
