@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/form.css"> 
     
 </head>
+
 <body>
     <main>
         <section class="page-section" id="Book-Now">
@@ -35,9 +36,17 @@
                 <input type="number" id="guest-count" name="guest-count" required>
 
                 <label for="referral">How Did You Hear About Us?</label>
-                <input type="text" id="referral" name="referral" required>
-
-                <label for="event-details">Tell Us More About This Event:</label>
+                <select id="boxs" name="referral" required> 
+                <option value="">Please select an option</option>
+                <option value="social-media">Social Media</option>
+                <option value="google-search">Google Search</option>
+                <option value="FF">Friend & Family</option>
+                <option value="RJ">Radio Javan</option>
+                <option value="email">email</option>
+                <option value="event">Event or Trade Show</option>
+  
+                </select>
+               <label for="event-details">Tell Us More About This Event:</label>
                 <textarea id="event-details" name="event-details" rows="4" required></textarea>
 
                 <button type="submit" class="submit-button">Submit</button>
@@ -45,6 +54,5 @@
         </section>
     </main>
 
-    <script src="assets/Java/main.js"></script>
 </body>
 </html>
