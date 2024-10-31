@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #0727f3b0;
+    color: #e0e6ff;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode .theme-toggle {
+    color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-content img {
+    width: 1400px;
+    position: relative;
+    height: 600px;
+   margin-top: 10px;
+    background: url(../images/Hakkasan.RadioJavan.SammyDean.12.22.23-3.jpeg) center/cover no-repeat;
+    opacity: 0.8;
+}
+
+nav {
+    background-color: #0727f3;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px 30px; 
+    border-radius: 8px; 
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition-duration: 1s;
+}
+
+.nav-left a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-left a:hover {
+    background: #d8e2ff;
+    color: #0727f3;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    gap: 10px;
+}
+
+body.dark-mode nav {
+    background-color: #000000;
+}
+
+.theme-toggle {
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body.dark-mode .theme-toggle {
+    color: #ffffff;
+}
+
+.page-section {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(7, 39, 243, 0.674);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 250, 250, 0.988);
+    transition-duration: 1s;
+}
+
+body.dark-mode .page-section {
+    background: #111111;
+}
+
+.flex-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    transition-duration: 1s;
+}
+
+.flex-item {
+    background: rgba(7, 94, 243, 0.474);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .flex-item {
+    background: #222222;
+}
+
+.testimonials blockquote {
+    background: rgba(7, 31, 243, 0.912);
+    border-left: 5px solid #0727f3;
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    color: #e0e6ff;
+    border-radius: 8px;
+}
+
+body.dark-mode .testimonials blockquote {
+    background: #333333;
+    color: #ffffff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    position: relative;
+}
+
+.gallery-item {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.5) translateY(-20%);
+    z-index: 10;
+}
+
+.contact img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+}
+
+.contact {
+    background: rgba(7, 39, 243, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+body.dark-mode .contact {
+    background: #111111;
+    color: #ffffff;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+    color: #d8e2ff;
+}
+
+body.dark-mode .contact h2 {
+    color: #ffffff;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background: #ffffff;
+    color: #0727f3;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+body.dark-mode .contact a {
+    background: #444444;
+    color: #ffffff;
+}
+
+.contact a:hover {
+    background: #d8e2ff;
+    color: #0727f3;
+}
+
+
+
+body.dark-mode .modal-content {
+    background: #3d003d;
+    color: #ffffff;
+}
+
+.email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-button, .close-button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background: #0727f3;
+    color: #ffffff;
+}
+
+body.dark-mode .submit-button {
+    background: #333333;
+    color: #ffffff;
+}
+
+.submit-button:hover {
+    background: #d8e2ff;
+    color: #0727f3;
+}
+
+.close-button {
+    background: #777;
+    color: #ffffff;
+}
+
+body.dark-mode .close-button {
+    background: #444444;
+    color: #ffffff;
+}
+
+.close-button:hover {
+    background: #333333;
+}
+
+.book-now {
+    background-color: #ffdc00;
+    color: #0727f3;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.book-now:hover {
+    background-color: #ffb700;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+        flex-direction: column;
+    }
+    
+    .nav-left,
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        font-size: 14px;
+    }
+
+    body {
+        padding-top: 5px;
+    }
+
+    .flex-container {
+         grid-template-columns: 1fr; 
+         gap: 15px; 
+        }
+    
+    .flex-item {
+         padding: 15px; 
+        } 
+    .header-content img {
+         width: 100%; 
+         height: auto; 
+         margin-top: 5px; /
+        }
+}
+
+#Amir {
+    display: inline-block;        
+    padding: 10px 20px;            
+    background-color: #333;        
+    color: #fff;                   
+    border-radius: 8px;            
+    text-decoration: none;         
+    font-weight: bold;            
+    text-align: center;            
+}
+
+#JT {
+    display: inline-block;        
+    padding: 10px 20px;            
+    background-color: #333;        
+    color: #fff;                   
+    border-radius: 8px;            
+    text-decoration: none;         
+    font-weight: bold;            
+    text-align: center;        
+}
