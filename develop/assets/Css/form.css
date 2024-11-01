@@ -95,14 +95,95 @@ input:focus, textarea:focus {
         padding: 6px 15px;
     }
 }
+
 #thank-you {
+    display: none;
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;
+    position: relative;
+    background-image: url('../images/5431323.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    color: #222; 
+    border-radius: 8px;
+}
+
+
+#thank-you::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    z-index: 0;
+}
+
+#thank-you h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+#thank-you h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #4CAF50;
+    margin: 8px auto;
+    border-radius: 2px;
+}
+
+#confirmation-message {
+    font-size: 1.1em;
+    color: #555;
+    position: relative;
+    z-index: 1;
+}
+
+#confirmation-message p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #333; 
+}
+
+#confirmation-message p strong {
+    color: #333;
+    font-weight: bold;
 }
 
 #thank-you img {
     max-width: 500px;
     height: 500px;
+    position: relative;
+    z-index: 1;
 }
 
+#thank-you button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+#thank-you button:hover {
+    background-color: #45a049;
+}
 

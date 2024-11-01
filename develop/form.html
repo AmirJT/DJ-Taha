@@ -6,7 +6,6 @@
     <title>Book Now - My Work</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.css"> 
-    
 </head>
 
 <body>
@@ -37,23 +36,23 @@
 
                 <label for="referral">How Did You Hear About Us?</label>
                 <select id="boxs" name="referral" required> 
-                <option value="">Please select an option</option>
-                <option value="social-media">Social Media</option>
-                <option value="google-search">Google Search</option>
-                <option value="FF">Friend & Family</option>
-                <option value="RJ">Radio Javan</option>
-                <option value="email">email</option>
-                <option value="event">Event or Trade Show</option>
-  
+                    <option value="">Please select an option</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="google-search">Google Search</option>
+                    <option value="FF">Friend & Family</option>
+                    <option value="RJ">Radio Javan</option>
+                    <option value="email">Email</option>
+                    <option value="event">Event or Trade Show</option>
                 </select>
-               <label for="event-details">Tell Us More About This Event:</label>
+                <label for="event-details">Tell Us More About This Event:</label>
                 <textarea id="event-details" name="event-details" rows="4" required></textarea>
 
                 <button type="submit" class="submit-button">Submit</button>
             </form>
         </section>
+        
         <section id="thank-you" style="display: none;">
-            <img src="assets/images/thank-you-cute-dj-kitten-clip-art-d2nkziu80kxex61r.gif" alt="Thank you!" />
+            <div id="confirmation-message"></div>
         </section>
         
     </main>
