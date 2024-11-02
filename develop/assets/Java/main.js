@@ -31,6 +31,25 @@
             img.style.transform = '';
         }
     });
+
+    document.addEventListener("DOMContentLoaded",function(){
+        const popupOverlay= document.getElementById("popUpOverLay");
+        const popup= document.getElementById("pop-up");
+        const emailForm= document.getElementById("email");
+        const emailnput= document.getElementById("emailInput");
+
+        popup.style.display="flex";
+        emailForm.addEventListener("submit", function(e){
+
+            e.preventDefault();
+            const email= emailInput.value;
+            
+            localStorage.setItem("userEmail",email);
+            popupOverlay.style.display= "none";
+        });
+
+
+    });
     
    
     

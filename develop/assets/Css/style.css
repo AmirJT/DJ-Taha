@@ -361,3 +361,31 @@ body.dark-mode .close-button {
     padding: 0; 
     border-radius: 50%;
 }
+
+.pop-Up {
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%; 
+    margin: 0 auto;
+    width: 80%; 
+    max-width: 600px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.flex {
+    display: none;
+    flex: none
+
+}
+
+.popUpOverLay{
+    background-color:none ;
+}
+
+.signUpform, .signUp {
+    border-radius: none;
+}
+
