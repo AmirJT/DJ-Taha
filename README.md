@@ -23,7 +23,7 @@ N/A
 
 ## Visuals
 
-![ScreenShot of DJ Taha Website](./assets/images/screenshot.png)
+[ScreenShot of DJ Taha Website](../assets/images/screenshot.png)
 
 
 ## Installation
